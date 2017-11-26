@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MD5测试</title>
+    <script src="md5.js"></script>
+</head>
+
+<body>
+    <input type="text" id="ipt">
+    <button id="btn">MD5加密</button>
+    <div>生成之后：<span id="opt"></span></div>
+</body>
+<script>
+var oBtn = document.getElementById('btn');
+var oIpt = document.getElementById('ipt');
+var oOpt = document.getElementById('opt');
+
+oBtn.onclick = function() {
+        console.log(oIpt.value)
+        if (oIpt.value) {
+            opt.innerHTML = hex_md5(oIpt.value)
+        }
+    }
+    document.write("余方龙MD5后字符串: ",hex_md5("余方龙"));
+</script>
+
+</html>
